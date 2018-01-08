@@ -70,4 +70,7 @@ function main() {
         Logger.log("Cpm is above $2, but not above $5 - set Cost per Click down to $1.25");
         adGroup.setCpm(targetCpm);
     }
+    else {
+        Logger.log("Error in script");
+    }
 }
