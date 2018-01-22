@@ -1,3 +1,16 @@
+// Initial Placement/Bidding Optimizer Script
+  // Select the current account
+  // Init the spreadsheet
+  // Select the current campaign to gather metrics for bidding optimization
+  // Init variables for conditionals - maxCpm(5), targetCpc(1), targetCpm(1.25), cpmCheck(2)
+  // Iterate over the campaigns - select enabled campaign to get stats - name, biddingstrategy, dailybudget, cpc, cpm
+  // Generate a report for the placements - Name, Cost, Cpm, Clicks, Impressions (LAST_7_DAYS)
+  // Print the report to the spreadsheet for placements that meet the conditions
+  // Conditional checks based on campaign stat metrics and initialized variables
+    // Check 1 - Current CPC < Target CPC = Set bidding strategy to Max Clicks ("TARGET_SPEND")
+    // Check 2 - Current CPM > MaxCPM = Set bidding strategy to VCPM ("MANUAL_CPM")
+    // Else Check - If stats don't meet those criteria leave the bidding strategy alone
+
 function main() {
   var currentAccount = AdWordsApp.currentAccount();
   var accountName = currentAccount.getName();
