@@ -99,6 +99,6 @@ function main() {
       //  campaign.bidding().setStrategy("MANUAL_CPM");
     }
     else {
-        Logger.log("Error in script");
+        Logger.log("Campaign stats are holding, no adjustment necessary");
     }
 }
